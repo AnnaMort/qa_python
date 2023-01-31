@@ -33,14 +33,14 @@ class TestBooksCollectogitr:
         collector_5 = BooksCollector()
         collector_5.add_new_book('Мрачный жнец')
         collector_5.add_book_in_favorites('Мрачный жнец')
-        assert 'Мрачный жнец' in collector_5.favorites
+        assert collector_5.favorites == ['Мрачный жнец']
 
 
     def test_delete_book_from_favorites_delete_specific_book_name_from_favorites(self):
         collector_6 = BooksCollector()
         collector_6.add_book_in_favorites('Мрачный жнец')
         collector_6.delete_book_from_favorites('Мрачный жнец')
-        assert 'Мрачный жнец' not in collector_6.favorites
+        assert collector_6.favorites == []
 
     def test_get_list_of_favorites_books_get_list_of_two_books(self):
         collector_7 = BooksCollector()
