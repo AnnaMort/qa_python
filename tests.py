@@ -4,7 +4,7 @@ class TestBooksCollectogitr:
     def test_add_new_book_add_one_book(self):
         collector = BooksCollector()
         collector.add_new_book('Мрачный жнец')
-        assert len(collector.get_books_rating()) == 1
+        assert collector.get_books_rating() == {'Мрачный жнец':1}
 
     def test_set_book_rating_for_value_from_permitted_range(self):
         collector_1 = BooksCollector()
@@ -48,5 +48,5 @@ class TestBooksCollectogitr:
         collector_7.add_new_book('Санта-Хрякус')
         collector_7.add_book_in_favorites('Мрачный жнец')
         collector_7.add_book_in_favorites('Санта-Хрякус')
-        assert len(collector_7.get_list_of_favorites_books()) == 2
+        assert collector_7.get_list_of_favorites_books() == ['Мрачный жнец','Санта-Хрякус']
 

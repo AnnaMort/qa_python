@@ -1,4 +1,4 @@
-#test_add_new_book_add_one_book - проверка добавления одноц книги
+#test_add_new_book_add_one_book - проверка добавления одной книги
 #test_set_book_rating_for_value_from_permitted_range - проверка, что рейтинг книги входит в разрешённый рендж
 #test_get_book_rating_get_value_for_specific_book - проверка возврашения рейтинга для специфического имени книги
 #test_get_books_with_specific_rating_result_for_rating_10_true - проверка добвлания имени книги со специфическим рейтингом
